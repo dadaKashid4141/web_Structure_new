@@ -1,0 +1,48 @@
+.sidebar{
+    display: grid;
+}
+
+/* Apply styles to the sidebar component */
+.sidebar {
+    color: #fff;
+    /* width: 240px; */
+    height:87vh;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    overflow-y: auto; /* Enable scrolling if content overflows */
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar li {
+    padding: 10px ;
+  }
+  
+  .sidebar a {
+    text-decoration: none;
+    color: #070606;
+    display: block;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* here is blur effect on hover */
+
+  /* .sidebar :hover .menuList {
+    filter: blur(2px);
+  }
+  .sidebar :hover .menuList:hover {
+    filter: blur(0px);
+    font-weight:600 ;
+  }
+   */
+
+
+
+
+
+  

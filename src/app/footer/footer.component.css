@@ -1,0 +1,30 @@
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  /* padding: 10px; */
+  /* position: absolute; */
+  bottom: 0;
+  width: -webkit-fill-available;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  align-content: stretch;
+  /* flex-wrap: wrap; */
+  gap: 5vw;
+  position: fixed;
+  /* margin-right: 8px; */
+  /* margin-left: -5vw; */
+  /* position: relative; */
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+}
+.rightReserve {
+  /* background-color: rgb(64, 77, 83); */
+  color: #e3e3e3;
+}
