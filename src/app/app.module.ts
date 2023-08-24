@@ -11,6 +11,7 @@ import { Content1Component } from './content1/content1.component';
 import { Content2Component } from './content2/content2.component';
 import { SideIconComponent } from './side-icon/side-icon.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { ServicessComponent } from './servicess/servicess.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     Content1Component,
     Content2Component,
     SideIconComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    ServicessComponent
   ],
   imports: [
     BrowserModule,

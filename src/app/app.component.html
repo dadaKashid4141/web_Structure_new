@@ -26,7 +26,7 @@
           <path
             d="M320 464c8.8 0 16-7.2 16-16V160H256c-17.7 0-32-14.3-32-32V48H64c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16H320zM0 64C0 28.7 28.7 0 64 0H229.5c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64z" />
         </svg>&nbsp;About</a></div>
-    <div><a routerLink=""><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 496 512">
+    <div><a routerLink="services"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 496 512">
           <path
             d="M88 216c81.7 10.2 273.7 102.3 304 232H0c99.5-8.1 184.5-137 88-232zm32-152c32.3 35.6 47.7 83.9 46.4 133.6C249.3 231.3 373.7 321.3 400 448h96C455.3 231.9 222.8 79.5 120 64z" />
         </svg>&nbsp;Service</a></div>
@@ -40,18 +40,24 @@
           <path
             d="M48 80a48 48 0 1 1 96 0A48 48 0 1 1 48 80zM0 224c0-17.7 14.3-32 32-32H96c17.7 0 32 14.3 32 32V448h32c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H64V256H32c-17.7 0-32-14.3-32-32z" />
         </svg>&nbsp;Project</a></div>
-    <div><a routerLink=""><i class="fa fa-volume-control-phone" style="color: #6ffbc5;"></i>&nbsp;Contact</a></div>
+    <div><a routerLink="contactUs"><i class="fa fa-volume-control-phone" style="color: #6ffbc5;"></i>&nbsp;Contact</a>
+    </div>
   </div>
 </div>
 
-<div class="container">
+<div class="containers">
   <div class="sidebar">
     <app-side-icon></app-side-icon>
   </div>
   <div class="contents">
-    <div [ngStyle]="{'margin-left': sidebarShow ? '8vw' : ''}">
-      <router-outlet></router-outlet>
-      <app-footer style="margin-top: 16%;"></app-footer>
+    <!-- for spliting containt row into two parts just uncomment below line -->
+    <!-- <div [ngStyle]="{'margin-left': sidebarShow ? '8vw' : ''}"> -->
+    <div [ngStyle]="{'z-index': sidebarShow ? '-1' : ''}">
+      <!-- Above line is used for overlaying sidebar on content -->
+      <div [ngStyle]="{'opacity': sidebarShow ? '35%' : ''}">
+
+        <router-outlet></router-outlet>
+        <app-footer style="margin-top: 16%;"></app-footer>
+      </div>
     </div>
   </div>
-</div>

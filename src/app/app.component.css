@@ -14,7 +14,7 @@
     padding: 20px;
   }
    */
-.container {
+.containers {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -27,7 +27,7 @@
   background: #060303;
   overflow-y: hidden;
   padding: 1%;
-  height: 93.9vh;
+  height: 95vh;
 }
 
 @media (max-width: 480px) {
@@ -67,7 +67,7 @@
 
 .sidebar-slider {
   position: fixed;
-  top: 39px;
+  top: 30px;
   left: 0;
   bottom: 0;
   background-color: #060303;

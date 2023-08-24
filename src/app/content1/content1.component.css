@@ -1,0 +1,11 @@
+.containerBox {
+  padding-left: 4vw;
+  padding-right: 4vw;
+  padding-top: 2vw;
+  padding-bottom: 11vh;
+}
+.abut {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

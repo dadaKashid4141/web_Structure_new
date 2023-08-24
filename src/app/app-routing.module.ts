@@ -4,12 +4,14 @@ import { HomeComponent } from './home/home.component';
 import { Content1Component } from './content1/content1.component';
 import { Content2Component } from './content2/content2.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { ServicessComponent } from './servicess/servicess.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'content1', component: Content1Component },
   { path: 'content2', component: Content2Component },
-  { path: 'contactUs', component: ContactFormComponent }
+  { path: 'contactUs', component: ContactFormComponent },
+  { path: 'services', component: ServicessComponent }
 ];
 
 @NgModule({

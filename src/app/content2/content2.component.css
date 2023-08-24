@@ -1,3 +1,16 @@
-.containtBox{
-    padding: 2px;
+.containtBox {
+  /* padding: 4vw !important; */
+}
+body {
+  display: grid;
+  justify-items: center;
+  justify-content: space-around;
+  align-items: center;
+  padding: 4vw;
+}
+.rows {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
