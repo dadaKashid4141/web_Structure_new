@@ -9,8 +9,38 @@ body {
   padding: 4vw;
 }
 .rows {
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 20px; */
+}
+.cardDesign {
+  background: linear-gradient(335deg, #0bebff, #8cf9af, #87c1ff);
+  border-radius: 35px;
+  margin-bottom: 35px;
+  filter: drop-shadow(7px 7px 13px black);
+}
+.jumbotron {
+  background-color: #f4511e;
+  color: #fff;
+  padding: 100px 25px;
+}
+
+.container-fluid {
+  padding: 60px 50px;
+}
+
+.bg-grey {
+  background-color: #f6f6f6;
+}
+
+.logo {
+  font-size: 200px;
+}
+
+@media screen and (max-width: 768px) {
+  .col-sm-4 {
+    text-align: center;
+    margin: 25px 0;
+  }
 }
